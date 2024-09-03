@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+
+    <!-- jQuery (must be loaded before Bootstrap's JS) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Calendar Script -->
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="Data_Explorer">
+        <div style = "width: 60%">
+            <div>
+                <div class = "summary-count"></div>
+                
+                <div class = "chart-filters" style = "display: flex; justify-content: center"></div>
+            </div>
+            
+            <div class = "word-cloud-container">
+                <div class="chart-title"></div>
+                <canvas id="myChart2_Data_Explorer"></canvas>
+            </div>
+            <div class = "bar-chart-container">
+                <div class="chart-title"></div>
+                <canvas id="myChart3_Data_Explorer"></canvas>
+            </div>
+            
+            <br>
+            
+            <div style = "display: flex;">
+                <div class = "map-chart-container">
+                    <div class="chart-title"></div>
+                    <canvas id="myChart1_Data_Explorer"></canvas>
+                </div>
+                <div class = "pie-chart-container">
+                    <div class="chart-title"></div>
+                    <div id = "legend-container"></div>
+                    
+                    <div style = "width: 75%; align-self: center">
+                        <canvas id="myChart4_Data_Explorer"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "table-container" style = "width: 40%">
+            <div class = "chart-title"></div>
+            
+            <table class="table table-sm table-striped table-bordered table-hover">
+                
+            </table>
+        </div>
+        
+        <div class="modal fade" id="showCaveat_Data_Explorer" tabindex="-1" aria-labelledby="showCaveat_Data_Explorer_Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="lightbox-modal modal-header">
+                        <h5 class="modal-title" id="showCaveat_Data_Explorer_Title">
+                            Caveat
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+            
+                    <div class="d-flex justify-content-center align-items-center modal-body" style = "flex-direction: column">
+                        <p>No data available for the selected criteria. Please adjust your selection and try again.</p>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button class="btn btn-link" data-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

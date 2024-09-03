@@ -1,0 +1,143 @@
+#Data_Explorer {
+    display: flex;
+}
+#Data_Explorer .chart-title {
+    font-size: 21px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.help-tooltip {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
+
+.svg-inline--fa.fa-xs {
+    vertical-align: 0em;
+}
+
+.fa-xs {
+    font-size: 0.75em;
+    line-height: 0.0833333337em;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+}
+
+.help-tooltip .help-icon {
+    color: #6c757d !important;
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
+    cursor: pointer;
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+
+#Data_Explorer .summary-count {
+    font-size: 16px;
+    font-family: roboto;
+    font-style: italic;
+    text-align: center;
+}
+
+#Data_Explorer canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#Data_Explorer .table tbody {
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    line-height: 1.3;
+}
+#Data_Explorer .table td, #Data_Explorer .table th {
+    padding: .2rem;
+    text-align: center;
+}
+#Data_Explorer .basic-table-header {
+    background-color: #FFFFFF;
+    color: #495057;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+#Data_Explorer .filtered-out {
+    display: none !important;
+}
+
+#Data_Explorer .header-dropdown {
+    color: #495057;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#Data_Explorer .date-slider-container label {
+    width: 86px !important;
+    text-align: right;
+}
+
+#Data_Explorer .select-dropdown {
+    padding: 0rem 1.5rem;
+}
+
+#Data_Explorer .filterCountry {
+    max-width: 300px;
+}
+
+#Data_Explorer .clear-filters-btn {
+    background-color: #0185AF;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .25rem .5rem;
+}
+
+#Data_Explorer .btn:disabled {
+    background-color: #dee2e6 !important;
+    border-color: #dee2e6 !important;
+    color: #6c757d !important;
+    opacity: 1 !important;
+}
+
+#Data_Explorer .modal {
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#Data_Explorer #legend-container {
+    align-self: center;
+    width: 98%;
+}
+
+#Data_Explorer .word-cloud-container {
+    aspect-ratio: 2 / 1; 
+    width: 100%;
+}
+
+#Data_Explorer .bar-chart-container {
+    aspect-ratio: 2 / 1; 
+    width: 100%;
+}
+
+#Data_Explorer .map-chart-container {
+    aspect-ratio: 1 / 1; 
+    width: 45%;
+}
+
+#Data_Explorer .pie-chart-container {
+    aspect-ratio: 1 / 1; 
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
